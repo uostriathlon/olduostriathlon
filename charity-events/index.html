@@ -4,93 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Charity Events – University of Sheffield Triathlon Club</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/mirror.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="../index.html" class="logo-link">
-        <div class="logo-mark" aria-hidden="true">🏊‍♂️</div>
-        <div class="logo-text">
-          <span class="uni">University of Sheffield</span>
-          <span class="club">Triathlon Club</span>
+
+<nav id="static-nav" aria-label="Main navigation">
+  <a class="nav-brand" href="../index.html">
+    <img class="logo-img" src="../images/3cd702_d473b41f0a6045e79889da208906f2bb~mv2_d_6860_2660_s_4_2.webp" alt="University of Sheffield Triathlon Club" width="445" height="184">
+  </a>
+  <button class="mobile-toggle" type="button" aria-label="Toggle menu"
+    onclick="document.querySelector('#static-nav .nav-links').classList.toggle('open')">☰ Menu</button>
+  <div class="nav-links-wrap">
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="../about-us/" onclick="event.preventDefault(); this.parentElement.classList.toggle('open');">About Us</a>
+        <div class="dropdown-menu">
+          <a href="../about-us/">About Us</a>
+          <a href="../the-committee/">The Committee</a>
         </div>
-      </a>
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-      <nav class="main-nav" aria-label="Main">
-        <a href="../index.html">Home</a>
-        <div class="nav-dropdown">
-          <button class="nav-parent">About Us</button>
-          <div class="dropdown-menu">
-            <a href="../about-us/index.html">About Us</a>
-            <a href="../the-committee/index.html">The Committee</a>
-            <a href="../membership/index.html">Membership</a>
-            <a href="../coaching/index.html">Coaching</a>
-            <a href="../inclusions-and-welfare/index.html">Inclusions &amp; Welfare</a>
-          </div>
+      </li>
+      <li><a href="../membership/">Membership</a></li>
+      <li><a href="../coaching/">Coaching</a></li>
+      <li class="dropdown">
+        <a href="../schedule/" onclick="event.preventDefault(); this.parentElement.classList.toggle('open');">Training</a>
+        <div class="dropdown-menu">
+          <a href="../schedule/">Schedule</a>
+          <a href="../training-holiday/">Training Holiday</a>
         </div>
-        <div class="nav-dropdown">
-          <button class="nav-parent">Training</button>
-          <div class="dropdown-menu">
-            <a href="../schedule/index.html">Schedule</a>
-            <a href="../training-holiday/index.html">Training Holiday</a>
-          </div>
+      </li>
+      <li class="dropdown">
+        <a href="../events/" onclick="event.preventDefault(); this.parentElement.classList.toggle('open');">Races</a>
+        <div class="dropdown-menu">
+          <a href="../events/">Races</a>
+          <a href="../give-it-a-go-duathlon/">Give It A Go Duathlon</a>
+          <a href="../copy-of-races/">Past Races</a>
+          <a href="../copy-of-give-it-a-go-duathlon/">Give It A Go Aquathlon</a>
         </div>
-        <div class="nav-dropdown">
-          <button class="nav-parent">Races</button>
-          <div class="dropdown-menu">
-            <a href="../races/index.html">Races Overview</a>
-            <a href="../give-it-a-go-duathlon/index.html">Give It A Go Duathlon</a>
-            <a href="../give-it-a-go-aquathlon/index.html">Give It A Go Aquathlon</a>
-          </div>
+      </li>
+      <li><a href="../socials/">Socials</a></li>
+      <li><a href="../charity-events/">Charity Events</a></li>
+      <li class="dropdown">
+        <a href="#" onclick="event.preventDefault(); this.parentElement.classList.toggle('open');">more</a>
+        <div class="dropdown-menu">
+          <a href="../our-sponsors/">Our Sponsors</a>
+          <a href="../affiliates/">Affiliates</a>
+          <a href="../inclusions-and-welfare/">Inclusions and Welfare</a>
+          <a href="../index.html#gallery">Gallery</a>
+          <a href="../index.html#contact">Contact us</a>
         </div>
-        <a href="../socials/index.html">Socials</a>
-        <a href="../charity-events/index.html">Charity Events</a>
-        <div class="nav-dropdown">
-          <button class="nav-parent">Sponsors</button>
-          <div class="dropdown-menu">
-            <a href="../our-sponsors/index.html">Sponsors</a>
-            <a href="../affiliates/index.html">Affiliates</a>
-          </div>
-        </div>
-        <a href="../gallery/index.html">Gallery</a>
-        <a href="../contact/index.html">Contact</a>
-      </nav>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="accent-line"></div>
+
+<main>
+  <div class="content">
+    
+    <h1>Charity Events</h1>
+    <p class="left">In our first Charity Week (27th April – 3rd May) Lauren ran our first charity event. The aim was to run, cycle or swim the distance to the cancelled training holiday in one week: 1992 km to Alcudia.</p>
+    <p class="left">The week was a huge success with 40 people (club members and non-club members) taking part and travelling just over 4000 km in total! As a club we raised an amazing £515 for the chosen charity: Sheffield Hospitals Charity, to support our local hospitals in the difficult times they are facing.</p>
+    <p class="left">Each year the club holds lots of charity events, such as a 24 hour relay and a whole week of charity fundraising. The funds go to a charity voted by the members!</p>
+    <p class="left">This year we’re really keen to get more involved in fundraising for charity and are excited to see what new events and ideas we can come up with!</p>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <strong>University of Sheffield Triathlon Club</strong>
+      Email: <a href="mailto:triathlon@sheffield.ac.uk">triathlon@sheffield.ac.uk</a><br>
+      Instagram: <a href="https://www.instagram.com/sheffunitri/" target="_blank" rel="noopener">@sheffunitri</a><br>
+      Facebook: <a href="https://www.facebook.com/UoSTriathlon/" target="_blank" rel="noopener">UoSTriathlon</a>
     </div>
-    <div class="accent-bar"></div>
-  </header>
-  <main>
-    <div class="content-wrap">
-      <h1 class="page-title">Charity Events</h1>
-      <div class="prose">
-        <p>In our first Charity Week Lauren ran our first charity event. The aim was to run, cycle or swim the distance to the cancelled training holiday in one week: 1992 km to Alcudia.</p>
-        <p>The week was a huge success with 40 people (club members and non-club members) taking part and travelling just over 4000 km in total! As a club we raised an amazing £515 for the chosen charity: Sheffield Hospitals Charity, to support our local hospitals in the difficult times they are facing.</p>
-        <p>Each year the club holds lots of charity events, such as a 24 hour relay and a whole week of charity fundraising. The funds go to a charity voted by the members!</p>
-        <p>This year we’re really keen to get more involved in fundraising for charity and are excited to see what new events and ideas we can come up with!</p>
-      </div>
+    <div style="text-align:right;font-size:0.85rem;color:#999">
+      The University of Sheffield Triathlon Club is partly funded by The Alumni Foundation.<br>
+      The University of Sheffield Triathlon Club is part of the University of Sheffield’s Sports Department.
     </div>
-  </main>
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <strong>University of Sheffield Triathlon Club</strong>
-        <p class="footer-contact">
-          Email: <a href="mailto:triathlon@sheffield.ac.uk">triathlon@sheffield.ac.uk</a><br>
-          Instagram: <a href="https://www.instagram.com/sheffunitri/" target="_blank" rel="noopener">@sheffunitri</a><br>
-          Facebook: <a href="https://www.facebook.com/UoSTriathlon/" target="_blank" rel="noopener">UoSTriathlon</a>
-        </p>
-      </div>
-      <div class="footer-logos">
-        <span style="font-size:0.85rem;color:#aaa;text-align:right">
-          Partly funded by The Alumni Foundation<br>
-          Part of the University of Sheffield’s Sports Department
-        </span>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      © University of Sheffield Triathlon Club · Static site prepared for GitHub Pages
-    </div>
-  </footer>
-  <script src="../js/nav.js"></script>
+  </div>
+  <div class="footer-bottom">Static archive mirror · prepared for GitHub Pages</div>
+</footer>
+
 </body>
 </html>

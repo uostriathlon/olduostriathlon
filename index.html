@@ -4,133 +4,128 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>University of Sheffield Triathlon Club</title>
-  <meta name="description" content="Official site of the University of Sheffield Triathlon Club – open to all abilities. Swim, bike, run and socials in Sheffield and the Peak District.">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="images/logo.png" type="image/png">
+  <meta name="description" content="University of Sheffield Triathlon Club – open to all abilities. Swim, bike, run and socials.">
+  <link rel="stylesheet" href="css/mirror.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="index.html" class="logo-link">
-        <div class="logo-mark" aria-hidden="true">🏊‍♂️</div>
-        <div class="logo-text">
-          <span class="uni">University of Sheffield</span>
-          <span class="club">Triathlon Club</span>
+
+<nav id="static-nav" aria-label="Main navigation">
+  <a class="nav-brand" href="index.html">
+    <img class="logo-img" src="images/3cd702_d473b41f0a6045e79889da208906f2bb~mv2_d_6860_2660_s_4_2.webp" alt="University of Sheffield Triathlon Club" width="445" height="184">
+  </a>
+  <button class="mobile-toggle" type="button" aria-label="Toggle menu"
+    onclick="document.querySelector('#static-nav .nav-links').classList.toggle('open')">☰ Menu</button>
+  <div class="nav-links-wrap">
+    <ul class="nav-links">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="about-us/" onclick="event.preventDefault(); this.parentElement.classList.toggle('open');">About Us</a>
+        <div class="dropdown-menu">
+          <a href="about-us/">About Us</a>
+          <a href="the-committee/">The Committee</a>
         </div>
-      </a>
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-      <nav class="main-nav" aria-label="Main">
-        <a href="index.html" class="active">Home</a>
-        <div class="nav-dropdown">
-          <button class="nav-parent">About Us</button>
-          <div class="dropdown-menu">
-            <a href="about-us/index.html">About Us</a>
-            <a href="the-committee/index.html">The Committee</a>
-            <a href="membership/index.html">Membership</a>
-            <a href="coaching/index.html">Coaching</a>
-            <a href="inclusions-and-welfare/index.html">Inclusions &amp; Welfare</a>
-          </div>
+      </li>
+      <li><a href="membership/">Membership</a></li>
+      <li><a href="coaching/">Coaching</a></li>
+      <li class="dropdown">
+        <a href="schedule/" onclick="event.preventDefault(); this.parentElement.classList.toggle('open');">Training</a>
+        <div class="dropdown-menu">
+          <a href="schedule/">Schedule</a>
+          <a href="training-holiday/">Training Holiday</a>
         </div>
-        <div class="nav-dropdown">
-          <button class="nav-parent">Training</button>
-          <div class="dropdown-menu">
-            <a href="schedule/index.html">Schedule</a>
-            <a href="training-holiday/index.html">Training Holiday</a>
-          </div>
+      </li>
+      <li class="dropdown">
+        <a href="events/" onclick="event.preventDefault(); this.parentElement.classList.toggle('open');">Races</a>
+        <div class="dropdown-menu">
+          <a href="events/">Races</a>
+          <a href="give-it-a-go-duathlon/">Give It A Go Duathlon</a>
+          <a href="copy-of-races/">Past Races</a>
+          <a href="copy-of-give-it-a-go-duathlon/">Give It A Go Aquathlon</a>
         </div>
-        <div class="nav-dropdown">
-          <button class="nav-parent">Races</button>
-          <div class="dropdown-menu">
-            <a href="races/index.html">Races Overview</a>
-            <a href="give-it-a-go-duathlon/index.html">Give It A Go Duathlon</a>
-            <a href="give-it-a-go-aquathlon/index.html">Give It A Go Aquathlon</a>
-          </div>
+      </li>
+      <li><a href="socials/">Socials</a></li>
+      <li><a href="charity-events/">Charity Events</a></li>
+      <li class="dropdown">
+        <a href="#" onclick="event.preventDefault(); this.parentElement.classList.toggle('open');">more</a>
+        <div class="dropdown-menu">
+          <a href="our-sponsors/">Our Sponsors</a>
+          <a href="affiliates/">Affiliates</a>
+          <a href="inclusions-and-welfare/">Inclusions and Welfare</a>
+          <a href="index.html#gallery">Gallery</a>
+          <a href="index.html#contact">Contact us</a>
         </div>
-        <a href="socials/index.html">Socials</a>
-        <a href="charity-events/index.html">Charity Events</a>
-        <div class="nav-dropdown">
-          <button class="nav-parent">Sponsors</button>
-          <div class="dropdown-menu">
-            <a href="our-sponsors/index.html">Sponsors</a>
-            <a href="affiliates/index.html">Affiliates</a>
-          </div>
-        </div>
-        <a href="gallery/index.html">Gallery</a>
-        <a href="contact/index.html">Contact</a>
-      </nav>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="accent-line"></div>
+
+<main>
+  <div class="hero">
+    <img src="images/3cd702_57884f82396b4e449c00366ef3757249f000.webp" alt="University of Sheffield Triathlon Club team" width="960" height="540">
+  </div>
+
+  <div class="content">
+    <h1>Welcome to The University Of Sheffield<br>Triathlon Club!</h1>
+
+    <div class="notice">
+      We are currently in the process of upgrading our website. Please follow all updates on our
+      <a href="https://www.instagram.com/sheffunitri/" target="_blank" rel="noopener">Instagram</a>
+      (https://www.instagram.com/sheffunitri/) and
+      <a href="https://www.facebook.com/UoSTriathlon/" target="_blank" rel="noopener">Facebook Pages</a>
+      (https://www.facebook.com/UoSTriathlon/)
     </div>
-    <div class="accent-bar"></div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <img src="images/3cd702_57884f82396b4e449c00366ef3757249f000.webp" alt="University of Sheffield Triathlon Club team group photo" width="960" height="540">
-      <div class="hero-overlay"></div>
-    </section>
+    <p>Welcome to the University of Sheffield Triathlon Club!</p>
 
-    <div class="content-wrap">
-      <h1 class="page-title">Welcome to The University Of Sheffield Triathlon Club!</h1>
+    <p><strong>Triathlon: 3 sports back to back!</strong> It might sound daunting, but we absolutely love when people give it a go.</p>
 
-      <div class="notice">
-        We are currently in the process of upgrading our website. Please follow all updates on our
-        <a href="https://www.instagram.com/sheffunitri/" target="_blank" rel="noopener">Instagram</a>
-        and
-        <a href="https://www.facebook.com/UoSTriathlon/" target="_blank" rel="noopener">Facebook</a> pages.
-      </div>
+    <p>Whether you have a background in one or more of the disciplines or are a complete beginner we would love for you to join our club and become part of our triathlon family. We are open to <strong>ALL ABILITIES</strong> and provide training to match (and push) the ability you are at.</p>
 
-      <div class="prose">
-        <p><strong>Triathlon: 3 sports back to back!</strong> It might sound daunting, but we absolutely love when people give it a go.</p>
-        <p>Whether you have a background in one or more of the disciplines or are a complete beginner we would love for you to join our club and become part of our triathlon family. We are open to <strong>ALL ABILITIES</strong> and provide training to match (and push) the ability you are at.</p>
-        <p>Sheffield is a lovely city with a lot to offer. We are very close to the beautiful Peak District – where our cycling training rides take place. We have club bikes that you can borrow for rides if you don’t have your own bike in Sheffield! Our club runs, swims and cycles have multiple groups of different levels of ability, and are very social so we can help motivate each other to train well and support each other.</p>
-        <p>At the start of the year we have 2 weeks of free training and a ‘Give it a Go’ duathlon which is a great opportunity to meet all of the lovely members of the club and see if you would like to join our club (you’d be silly not to)! Check out our socials for information on how to sign up.</p>
-        <p>Check out other pages on our website for more information on our normal training week, the races we compete in as a club, and the important socials throughout the year!</p>
-        <p>We also have active Instagram <a href="https://www.instagram.com/sheffunitri/" target="_blank" rel="noopener">@sheffunitri</a> and Facebook pages you could check out too!</p>
-      </div>
+    <p>Sheffield is a lovely city with a lot to offer. We are very close to the beautiful Peak District – where our cycling training rides take place. We have club bikes that you can borrow for rides if you don’t have your own bike in Sheffield! Our club runs, swims and cycles have multiple groups of different levels of ability, and are very social so we can help motivate each other to train well and support each other.</p>
 
-      <div class="social-links">
-        <a href="https://www.instagram.com/sheffunitri/" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
-        <a href="https://www.facebook.com/UoSTriathlon/" target="_blank" rel="noopener" aria-label="Facebook">📘</a>
-        <a href="mailto:triathlon@sheffield.ac.uk" aria-label="Email">✉️</a>
-      </div>
+    <p>At the start of the year we have 2 weeks of free training and a ‘Give it a Go’ duathlon which is a great opportunity to meet all of the lovely members of the club and see if you would like to join our club (you’d be silly not to)! Check out our socials for information on how to sign up.</p>
 
-      <div class="text-center mt-2">
-        <a href="schedule/index.html" class="btn">View Training Schedule</a>
-        &nbsp;
-        <a href="give-it-a-go-duathlon/index.html" class="btn btn-gold">Give It A Go</a>
-      </div>
+    <p>Check out other pages on our website for more information on our normal training week, the races we compete in as a club, and much important socials throughout the year!</p>
 
-      <h2 class="page-title" style="margin-top:3rem;font-size:1.5rem">Our Sponsors</h2>
-      <div class="sponsors-row">
-        <img src="images/fit4physioblack.webp" alt="Fit4 Physio" style="max-height:50px">
-        <img src="images/bike_revivie.webp" alt="Bike Revive / BikeRehab" style="max-height:55px">
-        <!-- Up & Running text fallback -->
-        <span style="font-weight:700;font-size:1.1rem;color:#333">UP &amp; RUNNING</span>
-      </div>
+    <p>We also have active Instagram (@sheffunitri) and Facebook pages you could check out too!</p>
+
+    <div class="social-row">
+      <a href="https://www.instagram.com/sheffunitri/" target="_blank" rel="noopener" title="Instagram">📷</a>
+      <a href="https://www.facebook.com/UoSTriathlon/" target="_blank" rel="noopener" title="Facebook">f</a>
     </div>
-  </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <strong>University of Sheffield Triathlon Club</strong>
-        <p class="footer-contact">
-          Email: <a href="mailto:triathlon@sheffield.ac.uk">triathlon@sheffield.ac.uk</a><br>
-          Instagram: <a href="https://www.instagram.com/sheffunitri/" target="_blank" rel="noopener">@sheffunitri</a><br>
-          Facebook: <a href="https://www.facebook.com/UoSTriathlon/" target="_blank" rel="noopener">UoSTriathlon</a>
-        </p>
-      </div>
-      <div class="footer-logos">
-        <span style="font-size:0.85rem;color:#aaa;text-align:right">
-          Partly funded by The Alumni Foundation<br>
-          Part of the University of Sheffield’s Sports Department
-        </span>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      © University of Sheffield Triathlon Club · Static site prepared for GitHub Pages
-    </div>
-  </footer>
+    <h2 id="contact">Contact Us</h2>
+    <p>For more information you can;<br>
+    email us at: <a href="mailto:triathlon@sheffield.ac.uk">triathlon@sheffield.ac.uk</a><br>
+    check out our facebook page: <a href="https://www.facebook.com/UoSTriathlon/" target="_blank" rel="noopener">https://www.facebook.com/UoSTriathlon</a></p>
 
-  <script src="js/nav.js"></script>
+    <h2>Our Sponsors</h2>
+    <div class="logo-row">
+      <img src="images/fit4physioblack.webp" alt="Fit4 Physio">
+      <img src="images/bike_revivie.webp" alt="BikeRehab / Bike Revive">
+    </div>
+
+    <h2>Affiliates</h2>
+    <p>The club gets money back on all purchases made via the affiliate links below (hold ctrl and click):</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <strong>University of Sheffield Triathlon Club</strong>
+      Email: <a href="mailto:triathlon@sheffield.ac.uk">triathlon@sheffield.ac.uk</a><br>
+      Instagram: <a href="https://www.instagram.com/sheffunitri/" target="_blank" rel="noopener">@sheffunitri</a><br>
+      Facebook: <a href="https://www.facebook.com/UoSTriathlon/" target="_blank" rel="noopener">UoSTriathlon</a>
+    </div>
+    <div style="text-align:right;font-size:0.85rem;color:#999">
+      The University of Sheffield Triathlon Club is partly funded by The Alumni Foundation.<br>
+      The University of Sheffield Triathlon Club is part of the University of Sheffield’s Sports Department.
+    </div>
+  </div>
+  <div class="footer-bottom">Static archive mirror · prepared for GitHub Pages</div>
+</footer>
+
 </body>
 </html>

@@ -1,26 +1,27 @@
-# University of Sheffield Triathlon Club — Static Site
+# University of Sheffield Triathlon Club — Static Archive Mirror
 
-Clean, modern static rebuild designed to match the visual style and content of the official club website (as shown in the reference PDF). Suitable for GitHub Pages.
+Visual archive of the club website, designed to match the original site appearance (logo, black header nav, purple accent, content and layout from the live site / PDF reference).
 
-## Features
+## What’s included
 
-- Responsive design with sticky header, purple accent bar, and mobile-friendly dropdown navigation
-- All main sections: Home, About, Committee, Membership, Coaching, Training Schedule & Holiday, Races, Give It A Go events, Socials, Charity, Sponsors, Affiliates, Inclusions & Welfare, Gallery, Contact
-- Clean typography and layout inspired by the original Wix site screenshots
-- Local images only (no broken Wix CDN dependencies for core content)
-- `.nojekyll` included so GitHub Pages serves files as-is
+- Original club logo image in the header
+- Static navigation matching the original menu structure (Home, About Us, Training, Races, Socials, Charity Events, more…)
+- All main content pages with text taken from the original site
+- Local images (no broken Wix CDN dependencies for core content)
+- Responsive mobile menu
+- Ready for GitHub Pages (`.nojekyll` included)
 
-## Deploy to GitHub Pages
+## Deploy
 
-1. Create a new repository.
-2. Push the **contents** of this folder (not the folder itself) to the `main` (or `gh-pages`) branch.
-3. Settings → Pages → Source = that branch / root (or `/docs`).
-4. Site will be available at `https://<username>.github.io/<repo>/`.
+1. Unzip.
+2. Push the **contents** of the `uostriathlon/` folder to the `main` (or `gh-pages`) branch of a GitHub repository.
+3. Settings → Pages → Source = that branch / root.
+4. Site URL: `https://<username>.github.io/<repo>/`.
 
 ## Contact
 
-- Email: triathlon@sheffield.ac.uk
-- Instagram: [@sheffunitri](https://www.instagram.com/sheffunitri/)
+- Email: triathlon@sheffield.ac.uk  
+- Instagram: [@sheffunitri](https://www.instagram.com/sheffunitri/)  
 - Facebook: [UoSTriathlon](https://www.facebook.com/UoSTriathlon/)
 
 The University of Sheffield Triathlon Club is partly funded by The Alumni Foundation and is part of the University of Sheffield’s Sports Department.

@@ -4,115 +4,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Our Sponsors – University of Sheffield Triathlon Club</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/mirror.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="../index.html" class="logo-link">
-        <div class="logo-mark" aria-hidden="true">🏊‍♂️</div>
-        <div class="logo-text">
-          <span class="uni">University of Sheffield</span>
-          <span class="club">Triathlon Club</span>
-        </div>
-      </a>
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-      <nav class="main-nav" aria-label="Main">
-        <a href="../index.html">Home</a>
-        <div class="nav-dropdown">
-          <button class="nav-parent">About Us</button>
-          <div class="dropdown-menu">
-            <a href="../about-us/index.html">About Us</a>
-            <a href="../the-committee/index.html">The Committee</a>
-            <a href="../membership/index.html">Membership</a>
-            <a href="../coaching/index.html">Coaching</a>
-            <a href="../inclusions-and-welfare/index.html">Inclusions &amp; Welfare</a>
-          </div>
-        </div>
-        <div class="nav-dropdown">
-          <button class="nav-parent">Training</button>
-          <div class="dropdown-menu">
-            <a href="../schedule/index.html">Schedule</a>
-            <a href="../training-holiday/index.html">Training Holiday</a>
-          </div>
-        </div>
-        <div class="nav-dropdown">
-          <button class="nav-parent">Races</button>
-          <div class="dropdown-menu">
-            <a href="../races/index.html">Races Overview</a>
-            <a href="../give-it-a-go-duathlon/index.html">Give It A Go Duathlon</a>
-            <a href="../give-it-a-go-aquathlon/index.html">Give It A Go Aquathlon</a>
-          </div>
-        </div>
-        <a href="../socials/index.html">Socials</a>
-        <a href="../charity-events/index.html">Charity Events</a>
-        <div class="nav-dropdown">
-          <button class="nav-parent">Sponsors</button>
-          <div class="dropdown-menu">
-            <a href="../our-sponsors/index.html">Sponsors</a>
-            <a href="../affiliates/index.html">Affiliates</a>
-          </div>
-        </div>
-        <a href="../gallery/index.html">Gallery</a>
-        <a href="../contact/index.html">Contact</a>
-      </nav>
-    </div>
-    <div class="accent-bar"></div>
-  </header>
-  <main>
-    <div class="content-wrap">
-      <h1 class="page-title">Our Sponsors</h1>
-      <div class="prose">
-        <h2>BikeRehab</h2>
-        <p>BikeRehab is run by Alex and Jake who used to be geography students at The University of Sheffield. They realised there was no cycle shop in Sheffield that solely concentrated on cycle maintenance and so with the help of Sheffield Enterprise Centre, started up their independent business. By concentrating on cycle maintenance, the business eliminates the time required to sell and build up new bikes.</p>
-        <p>BikeRehab pride themselves in providing a professional service and an exceptionally quick turn around.</p>
-        <p><strong>Member benefit:</strong></p>
-        <ul>
-          <li>10% off labour costs</li>
-          <li>15% off products and parts</li>
-          <li>Lock In Sessions – free bike maintenance and advice</li>
-        </ul>
 
-        <h2>Fit4-Physio</h2>
-        <p>Fit4-Physio believe that everyone is unique and special – that is what makes us all great – and that a ‘one size fits all’ physio clinic just isn’t an option. We are here to help get you from pain to performance and fighting Fit4 achieving your goals, whatever they may be, in a way that suits you.</p>
-        <p><strong>Member benefit:</strong></p>
-        <ul>
-          <li>20% off Bike fits</li>
-          <li>20% off physiotherapy or sports massage services</li>
-          <li>20% off gait analysis</li>
-        </ul>
+<nav id="static-nav" aria-label="Main navigation">
+  <a class="nav-brand" href="../index.html">
+    <img class="logo-img" src="../images/3cd702_d473b41f0a6045e79889da208906f2bb~mv2_d_6860_2660_s_4_2.webp" alt="University of Sheffield Triathlon Club" width="445" height="184">
+  </a>
+  <button class="mobile-toggle" type="button" aria-label="Toggle menu"
+    onclick="document.querySelector('#static-nav .nav-links').classList.toggle('open')">☰ Menu</button>
+  <div class="nav-links-wrap">
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li class="dropdown">
+        <a href="../about-us/" onclick="event.preventDefault(); this.parentElement.classList.toggle('open');">About Us</a>
+        <div class="dropdown-menu">
+          <a href="../about-us/">About Us</a>
+          <a href="../the-committee/">The Committee</a>
+        </div>
+      </li>
+      <li><a href="../membership/">Membership</a></li>
+      <li><a href="../coaching/">Coaching</a></li>
+      <li class="dropdown">
+        <a href="../schedule/" onclick="event.preventDefault(); this.parentElement.classList.toggle('open');">Training</a>
+        <div class="dropdown-menu">
+          <a href="../schedule/">Schedule</a>
+          <a href="../training-holiday/">Training Holiday</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="../events/" onclick="event.preventDefault(); this.parentElement.classList.toggle('open');">Races</a>
+        <div class="dropdown-menu">
+          <a href="../events/">Races</a>
+          <a href="../give-it-a-go-duathlon/">Give It A Go Duathlon</a>
+          <a href="../copy-of-races/">Past Races</a>
+          <a href="../copy-of-give-it-a-go-duathlon/">Give It A Go Aquathlon</a>
+        </div>
+      </li>
+      <li><a href="../socials/">Socials</a></li>
+      <li><a href="../charity-events/">Charity Events</a></li>
+      <li class="dropdown">
+        <a href="#" onclick="event.preventDefault(); this.parentElement.classList.toggle('open');">more</a>
+        <div class="dropdown-menu">
+          <a href="../our-sponsors/">Our Sponsors</a>
+          <a href="../affiliates/">Affiliates</a>
+          <a href="../inclusions-and-welfare/">Inclusions and Welfare</a>
+          <a href="../index.html#gallery">Gallery</a>
+          <a href="../index.html#contact">Contact us</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="accent-line"></div>
 
-        <h2>University of Sheffield Alumni Foundation</h2>
-        <p>The University of Sheffield Alumni Foundation is delighted to provide sponsorship to The University of Sheffield Triathlon Club (UoSTri). The Alumni Foundation exists to channel the donations of Sheffield alumni, staff, and friends of the University, into projects involving current students.</p>
-        <p><strong>Member benefit:</strong> 2 club bikes available for training and competing.</p>
+<main>
+  <div class="content">
+    
+    <h1>Our Sponsors</h1>
+    <h2>BikeRehab</h2>
+    <p class="left">BikeRehab is run by Alex and Jake who used to be geography students at The University of Sheffield. They realised there was no cycle shop in Sheffield that solely concentrated on cycle maintenance and so with the help of Sheffield Enterprise Centre, started up their independent business.</p>
+    <p class="left">BikeRehab pride themselves in providing a professional service and an exceptionally quick turn around.</p>
+    <p class="left"><strong>Member benefit:</strong> 10% off labour costs · 15% off products and parts · Lock In Sessions – free bike maintenance and advice</p>
+    <h2>Fit4-Physio</h2>
+    <p class="left">Fit4-Physio believe that everyone is unique and special – and that a ‘one size fits all’ physio clinic just isn’t an option. We are here to help get you from pain to performance.</p>
+    <p class="left"><strong>Member benefit:</strong> 20% off Bike fits · 20% off physiotherapy or sports massage · 20% off gait analysis</p>
+    <h2>University of Sheffield Alumni Foundation</h2>
+    <p class="left">The Alumni Foundation is delighted to provide sponsorship to UoSTri. Member benefit: 2 club bikes available for training and competing.</p>
+    <h2>Up and Running</h2>
+    <p class="left">Stores across the UK; closest in the centre of town. Member benefit: 15% off purchases.</p>
 
-        <h2>Up and Running</h2>
-        <p>Up and Running have stores across the UK; our closest one can be found in the centre of town. If new running shoes you can try on a treadmill with specific help from store assistants is what you need, head to Up and Running.</p>
-        <p><strong>Member benefit:</strong> 15% off purchases made from Up and Running.</p>
-      </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <strong>University of Sheffield Triathlon Club</strong>
+      Email: <a href="mailto:triathlon@sheffield.ac.uk">triathlon@sheffield.ac.uk</a><br>
+      Instagram: <a href="https://www.instagram.com/sheffunitri/" target="_blank" rel="noopener">@sheffunitri</a><br>
+      Facebook: <a href="https://www.facebook.com/UoSTriathlon/" target="_blank" rel="noopener">UoSTriathlon</a>
     </div>
-  </main>
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <strong>University of Sheffield Triathlon Club</strong>
-        <p class="footer-contact">
-          Email: <a href="mailto:triathlon@sheffield.ac.uk">triathlon@sheffield.ac.uk</a><br>
-          Instagram: <a href="https://www.instagram.com/sheffunitri/" target="_blank" rel="noopener">@sheffunitri</a><br>
-          Facebook: <a href="https://www.facebook.com/UoSTriathlon/" target="_blank" rel="noopener">UoSTriathlon</a>
-        </p>
-      </div>
-      <div class="footer-logos">
-        <span style="font-size:0.85rem;color:#aaa;text-align:right">
-          Partly funded by The Alumni Foundation<br>
-          Part of the University of Sheffield’s Sports Department
-        </span>
-      </div>
+    <div style="text-align:right;font-size:0.85rem;color:#999">
+      The University of Sheffield Triathlon Club is partly funded by The Alumni Foundation.<br>
+      The University of Sheffield Triathlon Club is part of the University of Sheffield’s Sports Department.
     </div>
-    <div class="footer-bottom">
-      © University of Sheffield Triathlon Club · Static site prepared for GitHub Pages
-    </div>
-  </footer>
-  <script src="../js/nav.js"></script>
+  </div>
+  <div class="footer-bottom">Static archive mirror · prepared for GitHub Pages</div>
+</footer>
+
 </body>
 </html>
