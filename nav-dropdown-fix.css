@@ -1,0 +1,79 @@
+/* Restores hover/focus dropdown behaviour for the site nav.
+   Wix's <wix-dropdown-menu> web component only opens submenus via
+   Wix's proprietary runtime JS, which isn't part of a static export.
+   All the real links are already in the DOM (in hidden <ul> submenus) -
+   this just makes them visible on hover/focus/tap, closest to how
+   the live site behaves. */
+
+.wixui-dropdown-menu__item {
+  position: relative;
+}
+
+.wixui-dropdown-menu__item > ul[aria-hidden] {
+  display: none;
+}
+
+.wixui-dropdown-menu__item:hover > ul,
+.wixui-dropdown-menu__item:focus-within > ul {
+  display: block !important;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 6px 0;
+  min-width: 190px;
+  background: rgba(28, 28, 26, 0.95);
+  z-index: 9999;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  border-radius: 4px;
+  list-style: none;
+}
+
+.wixui-dropdown-menu__item > ul li {
+  list-style: none;
+}
+
+.wixui-dropdown-menu__item > ul a {
+  display: block;
+  padding: 10px 18px;
+  color: #ffffff;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.wixui-dropdown-menu__item > ul a:hover,
+.wixui-dropdown-menu__item > ul a:focus {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Four nav items (Our Sponsors, Inclusions and Welfare, Gallery,
+   Contact us) were captured mid-collapse into Wix's responsive
+   "more" overflow menu, and are stuck permanently hidden
+   (visibility:hidden, height:0, position:absolute) since there's
+   no JS left to un-collapse them. Restore them to normal flow so
+   they render and behave like every other nav item. */
+#DrpDwnMn08,
+#DrpDwnMn09,
+#DrpDwnMn010,
+#DrpDwnMn011 {
+  visibility: visible !important;
+  height: 132px !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+#DrpDwnMn08 p,
+#DrpDwnMn09 p,
+#DrpDwnMn010 p,
+#DrpDwnMn011 p {
+  line-height: 132px !important;
+}
+
+/* The "more" overflow button has no items in a static export
+   (Wix fills it dynamically based on viewport width, and every
+   item already has its own visible slot here) - hide its arrow
+   affordance so it doesn't look like a dead control. */
+#DrpDwnMn0__more__ {
+  pointer-events: none;
+}
